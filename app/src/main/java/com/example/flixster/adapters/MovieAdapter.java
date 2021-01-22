@@ -81,6 +81,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 imageUrl = movie.getPosterPath();
             }
             Glide.with(context).load(imageUrl).into(ivPoster);
+            tvTitle.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+
         }
     }
 }
